@@ -1,0 +1,370 @@
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Proxima';
+    src: url("") format('truetype'),
+    url("C:\Users\wilhe\Documents\WebDev\Proxima Nova\ProximaNova-Regular.otf") format('truetype'),
+    url("C:\Users\wilhe\Documents\WebDev\Proxima Nova\Proxima Nova Black.otf") format('truetype'),
+    url("C:\Users\wilhe\Documents\WebDev\Proxima Nova\Proxima Nova Bold.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BookAntiqua';
+    src: url("") format('truetype'),
+    url("C:\Users\wilhe\Documents\WebDev\book-antiqua_[allfont.net].ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 480px) {
+
+.toggle-button {
+    display: flex;
+}
+.navbar-links {
+    display: none;
+}
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar-links li {
+    text-align: center;
+}
+.navbar-links li a {
+    padding: .5rem 1rem;
+}
+.navbar-links.active {
+    display: flex;
+}
+}
+
+/* body */
+
+html { 
+    font-size: 16px;
+}
+
+body {
+    background-color: antiquewhite !important;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'BookAntiqua' !important;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.55;
+    letter-spacing: 0.065em;
+    text-rendering: optimizelegibility;
+} 
+
+/* Navbar */
+
+header { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5%;
+}
+
+
+.main-header {
+    
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    position: fixed;
+    font-size: 1.438rem;
+    font-weight: 43.75rem;
+    line-height: 1.438rem;
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #c45238;
+    color: antiquewhite; 
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+
+.header-center {
+    display: inline-flex;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    font-size:1.3rem;
+    margin: 0.5rem;
+    font-style:normal;
+    color:antiquewhite;
+    align-content: center;
+    justify-content: center;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    display:inline-flex;
+    list-style: none;
+    transition-duration: 0.5s;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-links li a {
+    text-decoration: none;
+    font-family: 'BookAntiqua';
+    color: antiquewhite;
+    padding: 1rem; 
+    display: block;
+}
+
+
+
+#header-left a {
+    padding-left: 0.5rem;
+}
+.navbar-links i {
+    color:antiquewhite;
+    margin-left: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #a13434;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+ }
+
+.toggle-button .bar  {
+    height: 3px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+ }
+
+
+/* Main */
+
+
+.youpayiwrite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10%;
+    align-items: center;
+    margin-top: 5%;
+}
+#headline {
+    display: inline-flex;
+    color:#c45238; 
+    font-size: 4rem; 
+    font-weight: bold;
+    justify-content:center;
+    margin: 15% auto 7% auto;
+}
+
+.heading1 {
+    text-align: center;
+    display: inline-flex;
+    flex-direction:column;
+}
+
+.youpayiwrite h2 {
+    display: inline-flex;
+    color: #6e6b65;
+    font-style: italic;
+    justify-content:center;
+    font-size:2rem;
+    margin-bottom: 5%;
+}
+
+.Expertise {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1,438em;
+    
+}
+.main-body {
+    display: flex;
+    margin: 15% 3%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Leistungen h2 {
+    color:#6e6b65;
+}
+.Leistungen {
+    display: inline-flex;
+    width: 50%;
+    margin: 5% 25% 5% 25%;
+    padding: 1% 5% 0 5%;
+    flex-direction: column;
+    font-size: 1.1rem;  
+}
+
+.Textästhetik {
+    display: inline-flex; 
+    width: 50%;
+    margin: 5% 0 5% 0;
+    flex-direction: column;
+    padding: 0 5% 0 5%;
+    font-size:1.1rem;
+    
+}
+
+em {
+    font-style: normal;
+    color:#ff623f;    
+}
+
+.Textästhetik-block1 {
+
+    margin-bottom: 0;
+}
+
+.Textästhetik-block2 {
+    margin-top: 0;
+}
+
+
+
+.Textästhetik h2 {
+    font-size:xx-large;
+    text-align: left;
+    color: #6e6b65;
+    margin-bottom: 5%;
+}
+
+.Textästhetik li {
+    margin-top: 2%;
+    list-style: none;
+}
+
+.main-body h2 {
+    font-style:italic;
+}
+.Leistungen li {
+    margin: 2% 0 2% 0;
+    list-style: none;
+}
+
+.Leistungen i {
+    color:#ff623f;   
+}
+
+
+
+
+/* About Me | Credentials */
+
+
+.header-about {
+    font-size: xx-large;
+    color:#6e6b65;
+    text-align: center;
+    font-style:oblique;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 4% 4%;
+    background-color:antiquewhite;
+    width: 100%;
+
+}
+
+.image {
+
+    display: inline-flex; 
+    width: 25%;
+    align-items: center;
+    padding: 0;
+    margin: 10% 10%;
+}
+
+.img1 {
+    width: 100%;
+    top: 0%;
+    border-radius: 1%;
+    border: 3px transparent;
+    margin: 0;
+}
+
+
+.img1:hover {
+    transform: scaleX(-1);
+}
+
+.Introduction {
+    display: inline-flex;
+    font-family: 'BookAntiqua' sans-serif;
+    color:#6e6b65; 
+    text-align: left;
+    width: 25%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.854px;
+    border: 1px transparent rgb(240, 238, 237);
+    flex-direction:column;
+    align-self:center;
+    padding-top: 10%;
+ 
+}
+
+.CV {
+    display: inline-flex;
+    font-family: 'BookAntiqua' sans-serif;
+    color:#6e6b65; 
+    text-align: left;
+    width: 25%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.854px;
+    border: 1px transparent rgb(240, 238, 237);
+    flex-direction:column;
+    align-self:center;
+    padding-top: 10%;
+
+}
+
+
+
+
+/* Contact */
